@@ -1,7 +1,8 @@
+# file organizer
 import os
 import shutil
 
-# Folder categories and file extensions
+# folder categories and file extensions
 CATEGORIES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif"],
     "Documents": [".pdf", ".docx", ".txt", ".pptx"],
