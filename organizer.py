@@ -63,13 +63,13 @@ def organize_folder(folder_path):
     print(f"\n✅ Done! {files_moved} files moved.\n")
 
 def main():
-    print("=== 📂 Smart File Organizer ===\n")
+    print(" 📂 Smart File Organizer \n")
     folder_name = input("📁 Enter the folder name you want to organize: ").strip()
 
     folder_path = find_folder(folder_name)
 
     if not folder_path:
-        custom = input("❌ Could not find folder automatically.\n➡️ Enter full path manually: ").strip()
+        custom = input("❌ Could not find folder automatically.\n Enter full path manually: ").strip()
         if not os.path.exists(custom):
             print("❌ Still not found. Exiting.")
             return
