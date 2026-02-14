@@ -68,7 +68,7 @@ def organize_folder(folder_path):
     print(f"\nDone. {files_moved} files organized.\n")
 
 def main():
-    print("=== File Organizer ===\n")
+    print(" File Organizer \n")
 
     folder_name = input("Enter the folder name to organize: ").strip()
     folder_path = find_folder(folder_name)
