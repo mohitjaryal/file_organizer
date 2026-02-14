@@ -1,8 +1,8 @@
 import os
 import shutil
 
-# folder categories and file extentions
- categories= {
+# Folder categories and file extensions
+categories = {
     "Images": [".jpg", ".jpeg", ".png", ".gif"],
     "Documents": [".pdf", ".docx", ".txt", ".pptx"],
     "Videos": [".mp4", ".mkv", ".mov"],
@@ -13,7 +13,7 @@ import shutil
 
 def organize_folder(folder_path):
     if not os.path.exists(folder_path):
-        print("Folder not found!")
+        print("❌ Folder not found!")
         return
     
     for filename in os.listdir(folder_path):
@@ -39,7 +39,7 @@ def organize_folder(folder_path):
 def main():
     folder = input("Enter folder path to organize: ").strip()
     organize_folder(folder)
-    print("\n Folder organized successfully!")
+    print("\n✅ Folder organized successfully!")
 
 if __name__ == "__main__":
     main()
