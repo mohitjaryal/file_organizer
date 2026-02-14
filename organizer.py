@@ -13,6 +13,7 @@ CATEGORIES = {
 }
 
 def find_folder(folder_name):
+    
     """
     searches the user's home directory for a folder with the given name.
     Returns the full path if found, otherwise None.
