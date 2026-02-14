@@ -13,7 +13,7 @@ categories = {
 
 def organize_folder(folder_path):
     if not os.path.exists(folder_path):
-        print("❌ Folder not found!")
+        print(" Folder not found!")
         return
     
     for filename in os.listdir(folder_path):
