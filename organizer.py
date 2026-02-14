@@ -13,10 +13,10 @@ CATEGORIES = {
 }
 
 def find_folder(folder_name):
-    
+
     """
     searches the user's home directory for a folder with the given name.
-    Returns the full path if found, otherwise None.
+    Returns the full path if found otherwise none.
     """
     home = os.path.expanduser("~")
     print(f"\nSearching for folder '{folder_name}' in {home} ...\n")
