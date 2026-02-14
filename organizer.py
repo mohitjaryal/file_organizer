@@ -1,4 +1,4 @@
 import os
 import shutil
 
-# folder categories
+# folder categories and file extentions
