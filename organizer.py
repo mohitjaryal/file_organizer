@@ -31,7 +31,7 @@ def find_folder(folder_name):
     return None
 
 def organize_folder(folder_path):
-    """Organizes files inside the given folder into subfolders by file type."""
+    # Organizes files inside the given folder into subfolders by file type.
     if not os.path.exists(folder_path):
         print(f"Folder not found: {folder_path}")
         return
