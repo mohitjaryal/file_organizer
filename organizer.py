@@ -39,7 +39,7 @@ def organize_folder(folder_path):
 def main():
     folder = input("Enter folder path to organize: ").strip()
     organize_folder(folder)
-    print("\n✅ Folder organized successfully!")
+    print("\n Folder organized successfully!")
 
 if __name__ == "__main__":
     main()
