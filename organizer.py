@@ -2,7 +2,7 @@ import os
 import shutil
 
 # folder categories and file extentions
-categories = {
+ categories= {
     "Images": [".jpg", ".jpeg", ".png", ".gif"],
     "Documents": [".pdf", ".docx", ".txt", ".pptx"],
     "Videos": [".mp4", ".mkv", ".mov"],
@@ -21,7 +21,7 @@ def organize_folder(folder_path):
         if os.path.isfile(file_path):
             _, ext = os.path.splitext(filename)
             moved = False
-            for category, extensions in CATEGORIES.items():
+            for category, extensions in categories.items():
                 if ext.lower() in extensions:
                     category_folder = os.path.join(folder_path, category)
                     os.makedirs(category_folder, exist_ok=True)
